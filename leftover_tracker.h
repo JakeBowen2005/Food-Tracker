@@ -10,6 +10,16 @@
 
 
 class LeftoverTracker {
+ public:
+  bool AddRecord(const LeftoverRecord &record);
+  bool DeleteRecord(const LeftoverRecord &record);
+  const std::vector<LeftoverRecord> &GetRecords() const;
+  LeftoverReport GetLeftoverReport() const;
+
+
+ private:
+  std::vector<LeftoverRecord> leftover_records_;
+
     // ======================= YOUR CODE HERE =======================
       // Write the LeftoverTracker class here. Refer to your class design for the
       // member variables, constructors, and member functions needed.
