@@ -1,9 +1,8 @@
-// Please fill in below.
-// <Your name>
-// <Your section number> (e.g. CPSC 121L-01)
-// <Date>
-// <Your csu.fullerton.edu email>
-// <Your GitHub username>
+// Jake Bowen
+// CPSC 121L-19
+// April 16, 2024
+// jakeeb05@csu.fullerton.edu
+// JakeBowen2005
 
 #include "leftover_record.h"
 
@@ -19,3 +18,45 @@
 // to tell the compiler that each function belongs to the LeftLeftoverRecord
 // class.
 // ===================================================================
+void LeftoverRecord::SetDate(const std::string& date) {
+    date_ = date;
+}
+const std::string& LeftoverRecord::GetDate() const {
+    return date_;
+}
+ void LeftoverRecord::SetMeal(const std::string& meal) {
+    meal_ = meal;
+ }
+ const std::string& LeftoverRecord::GetMeal() const {
+    return meal_;
+ }
+ void LeftoverRecord::SetFoodName(const std::string& food_name) {
+    food_name_ = food_name;
+ }
+ const std::string& LeftoverRecord::GetFoodName() const {
+    return food_name_;
+ }
+ void LeftoverRecord::SetOunces(double ounces) {
+    ounces_ = ounces;
+ }
+ const double LeftoverRecord::GetOunces() const {
+    return ounces_;
+ }
+ void LeftoverRecord::SetLeftOverReason(const std::string& leftover_reason) {
+    leftover_reason_ = leftover_reason;
+ }
+ const std::string& LeftoverRecord::GetLeftOverReason() const {
+    return leftover_reason_;
+ }
+ void LeftoverRecord::SetDisposal(const std::string& disposal) {
+    disposal_ = disposal;
+ }
+ const std::string LeftoverRecord::GetDisposal() const {
+    return disposal_;
+ }
+ void LeftoverRecord::SetCost(double cost) {
+    cost_ = cost;
+ }
+ const double LeftoverRecord::GetCost() const {
+    return cost_;
+ }

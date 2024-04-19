@@ -1,14 +1,41 @@
 #ifndef LEFTOVER_RECORD_H_
 #define LEFTOVER_RECORD_H_
 
-// Please fill in below.
-// <Your name>
-// <Your section number> (e.g. CPSC 121L-01)
-// <Date>
-// <Your csu.fullerton.edu email>
-// <Your GitHub username>
+// Jake Bowen
+// CPSC 121L-19
+// April 16, 2024
+// jakeeb05@csu.fullerton.edu
+// JakeBowen2005
 
 class LeftoverRecord {
+ public:
+ void SetDate(const std::string& date);
+ const std::string& GetDate() const;
+ void SetMeal(const std::string& meal);
+ const std::string& GetMeal() const;
+ void SetFoodName(const std::string& food_name);
+ const std::string& GetFoodName() const;
+ void SetOunces(double ounces);
+ const double GetOunces() const;
+ void SetLeftOverReason(const std::string& leftover_reason);
+ const std::string& GetLeftOverReason() const;
+ void SetDisposal(const std::string& disposal);
+ const std::string GetDisposal() const;
+ void SetCost(double cost);
+ const double GetCost() const;
+
+
+
+ private:
+  std::string date_;
+  std::string meal_;
+  std::string food_name_;
+  double ounces_;
+  std::string leftover_reason_;
+  std::string disposal_;
+  double cost_;
+
+
     // ======================= YOUR CODE HERE =======================
     // Write the LeftoverRecord class here. Refer to your class design for the
     // member variables, constructors, and member functions needed.
