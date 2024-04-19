@@ -36,11 +36,11 @@ const std::string& LeftoverRecord::GetDate() const {
  const std::string& LeftoverRecord::GetFoodName() const {
     return food_name_;
  }
- void LeftoverRecord::SetOunces(double ounces) {
-    ounces_ = ounces;
+ void LeftoverRecord::SetQuantityInOz(double qty_in_oz) {
+    qty_in_oz_ = qty_in_oz;
  }
- const double LeftoverRecord::GetOunces() const {
-    return ounces_;
+ const double LeftoverRecord::GetQuantityInOz() const {
+    return qty_in_oz_;
  }
  void LeftoverRecord::SetLeftOverReason(const std::string& leftover_reason) {
     leftover_reason_ = leftover_reason;
@@ -48,11 +48,11 @@ const std::string& LeftoverRecord::GetDate() const {
  const std::string& LeftoverRecord::GetLeftOverReason() const {
     return leftover_reason_;
  }
- void LeftoverRecord::SetDisposal(const std::string& disposal) {
-    disposal_ = disposal;
+ void LeftoverRecord::SetDisposalMechanism(const std::string& disposal_mechanism) {
+    disposal_mechanism_ = disposal_mechanism;
  }
- const std::string LeftoverRecord::GetDisposal() const {
-    return disposal_;
+ const std::string LeftoverRecord::GetDisposalMechanism() const {
+    return disposal_mechanism_;
  }
  void LeftoverRecord::SetCost(double cost) {
     cost_ = cost;

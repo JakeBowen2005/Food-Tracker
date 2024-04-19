@@ -9,20 +9,22 @@
 
 class LeftoverRecord {
  public:
- void SetDate(const std::string& date);
- const std::string& GetDate() const;
- void SetMeal(const std::string& meal);
- const std::string& GetMeal() const;
- void SetFoodName(const std::string& food_name);
- const std::string& GetFoodName() const;
- void SetOunces(double ounces);
- const double GetOunces() const;
- void SetLeftOverReason(const std::string& leftover_reason);
- const std::string& GetLeftOverReason() const;
- void SetDisposal(const std::string& disposal);
- const std::string GetDisposal() const;
- void SetCost(double cost);
- const double GetCost() const;
+  void SetDate(const std::string &date);
+  void SetMeal(const std::string &meal) ;
+  void SetFoodName(const std::string &food_name);
+  void SetQuantityInOz(double qty_in_oz);
+  void SetLeftoverReason(const std::string &leftover_reason);
+  void SetDisposalMechanism(const std::string &disposal_mechanism) ;
+  void SetCost(double cost);
+
+  std::string GetDate() const;
+  std::string GetMeal() const ;
+  std::string GetFoodName() const;
+  double GetQuantityInOz() const ;
+  std::string GetLeftoverReason() const;
+  std::string GetDisposalMechanism() const;
+  double GetCost() const;
+
 
 
 
@@ -30,10 +32,11 @@ class LeftoverRecord {
   std::string date_;
   std::string meal_;
   std::string food_name_;
-  double ounces_;
+  double qty_in_oz_;
   std::string leftover_reason_;
-  std::string disposal_;
+  std::string disposal_mechanism_;
   double cost_;
+
 
 
     // ======================= YOUR CODE HERE =======================
